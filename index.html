@@ -42,7 +42,7 @@
     display: flex; align-items: center; gap: 10px; text-decoration: none;
   }
   .nav-logo img{
-    height: 70px;
+    height: 60px;
     width: auto;
     object-fit: contain;
   }
@@ -100,7 +100,7 @@
   }
   .hero-eyebrow::before { content: ''; display: block; width: 32px; height: 1px; background: var(--gold); }
   .hero h1 {
-    font-family: var(--font-head); font-size: clamp(48px, 6vw, 82px);
+    font-family: var(--font-head); font-size: clamp(48px, 6vw, 78px);
     font-weight: 300; line-height: 1.1; color: var(--white);
     margin-bottom: 26px;
   }
@@ -271,7 +271,11 @@
     gap: 10px; min-height: 120px; transition: border-color .2s;
   }
   .partner-slot:hover { border-color: var(--gold); }
-  .partner-slot-icon { font-size: 28px; opacity: .25; }
+  .partner-slot-icon img{
+    height: 70px;
+    width: auto;
+    object-fit: contain;
+  }
   .partner-slot-label { font-size: 12px; letter-spacing: 1px; text-transform: uppercase; color: var(--muted); }
   .partners-note { margin-top: 24px; font-size: 13px; color: var(--muted); }
 
@@ -306,6 +310,9 @@
   footer {
     background: #07131f; padding: 48px 5% 32px;
     border-top: 1px solid rgba(255,255,255,.06);
+  }
+  footer .nav-logo img{
+    height: 100px ;
   }
   .footer-inner { max-width: 1200px; margin: 0 auto; }
   .footer-top { display: grid; grid-template-columns: 2fr 1fr 1fr 1fr; gap: 48px; padding-bottom: 40px; border-bottom: 1px solid rgba(255,255,255,.06); }
@@ -405,8 +412,7 @@
   <div class="hero-content">
     <div class="hero-eyebrow">Noble Inkventures Group</div>
     <h1>
-      Building Ventures That<br />
-      <strong>Shape Tomorrow</strong>
+      Building Ventures That <strong style="display: inline;">Shape Tomorrow</strong>
     </h1>
     <p class="hero-sub">
       A diversified business group operating at the intersection of knowledge, digital infrastructure, and technology — creating lasting value across industries and borders.
@@ -616,25 +622,25 @@
 <section class="partners" id="partners">
   <div class="partners-inner">
     <div class="section-tag">Collaborators</div>
-    <h2 class="section-title">Our <em>Partners</em></h2>
+    <h2 class="section-title">Our <em>Brands</em></h2>
     <div class="divider"></div>
-    <p class="section-lead">We collaborate with world-class partners who share our commitment to quality, integrity, and innovation.</p>
+    <p class="section-lead">We collaborate with world-class brands who share our commitment to quality, integrity, and innovation.</p>
     <div class="partners-grid reveal">
       <div class="partner-slot">
-        <div class="partner-slot-icon">🏢</div>
-        <div class="partner-slot-label">Partner Coming Soon</div>
+        <div class="partner-slot-icon"><img src="https://moldremovalcleaner.com/images/logo-landscape.webp" alt=""></div>
+        <div class="partner-slot-label">Mold Removal Cleaner</div>
       </div>
       <div class="partner-slot">
-        <div class="partner-slot-icon">🏢</div>
-        <div class="partner-slot-label">Partner Coming Soon</div>
+        <div class="partner-slot-icon"><img src="https://gulfbookpublishers.com/assets/images/Gulf-book-publisher.png" alt=""></div>
+        <div class="partner-slot-label">Gulf Book Publishers</div>
       </div>
       <div class="partner-slot">
-        <div class="partner-slot-icon">🏢</div>
-        <div class="partner-slot-label">Partner Coming Soon</div>
+        <div class="partner-slot-icon"><img src="https://selfpublishbooks.co.uk/images/logo.webp" alt=""></div>
+        <div class="partner-slot-label">Self Publish Books UK</div>
       </div>
       <div class="partner-slot">
-        <div class="partner-slot-icon">🏢</div>
-        <div class="partner-slot-label">Partner Coming Soon</div>
+        <div class="partner-slot-icon"><img src="https://bookpublisheruk.co.uk/images/british-book-publishers.webp" alt=""></div>
+        <div class="partner-slot-label">Book Publishers UK</div>
       </div>
     </div>
     <p class="partners-note">Interested in partnering with Noble Inkventures? <a href="#contact" style="color:var(--gold);text-decoration:none;">Get in touch →</a></p>
@@ -692,12 +698,10 @@
         <label>Inquiry Type</label>
         <select>
           <option value="">Select an area of interest</option>
-          <option>Book Publication</option>
-          <option>Rank & Rent / Digital Assets</option>
-          <option>Tools & SaaS</option>
-          <option>Partnership</option>
-          <option>Investment</option>
-          <option>General Inquiry</option>
+          <option value="">Mold Removal Cleaner</option>
+          <option value="">Gulf Book Publishers</option>
+          <option value="">Self Publish Books UK</option>
+          <option value="">Book Publishers UK</option>
         </select>
       </div>
       <div class="form-group">
